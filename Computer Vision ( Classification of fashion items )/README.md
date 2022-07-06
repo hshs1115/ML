@@ -5,6 +5,7 @@ keras 기본 제공 데이터 이용
 
 
 <baseline_CNN>
+
     학습속도 빠름
     
     정확도 약 0.90
@@ -13,6 +14,7 @@ keras 기본 제공 데이터 이용
     
 
 <VGG16>
+
     VGG16의 input인 244,244 사이즈를 맞추기 위해
     cv2 resize 방법은 알아냈지만, 이미지 한장당 resize 방법만 알아냈고,
     60000만장 전체를 resize하는 방법을 찾느라 오래걸림
@@ -24,12 +26,14 @@ keras 기본 제공 데이터 이용
    
    
 <VGG16 ( Transfer Learning )>
+
     input으로 (28, 28) 들어가지 않음
     
     
     
 
 <EfficienNet ( Transfer Learning ) ( 32, 32, 3 )>
+
     train 10000개 추출해서
     최소 input_size인 (32, 32, 3) 으로 학습
     학습속도 빠름
@@ -39,6 +43,7 @@ keras 기본 제공 데이터 이용
 
 
 <EfficienNet ( Transfer Learning ) ( 300, 300, 3 )>
+
     train을 2000개만 추출해서
     input_size = (300, 300, 3)
     --> 정확도 매우 낮음 & 속도 느림
@@ -55,6 +60,7 @@ keras 기본 제공 데이터 이용
 
 
 <전체적으로>
+
     epoch = 10, batch_size = 64 로 고정
     --> hyperparameter tuning 진행하면 정확도 높아질 것으로 예측
     
