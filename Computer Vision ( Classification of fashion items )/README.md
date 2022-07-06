@@ -4,24 +4,23 @@ keras 기본 제공 데이터 이용
 모든 모델 tensorflow keras 라이브러리 사용
 
 
+
+
 <baseline_CNN>
 
     학습속도 빠름
     
     정확도 약 0.90
-    
-    
-    
 
-<VGG16>
-
+<VGG16 ( 28, 28 )>
+    
     VGG16의 input인 244,244 사이즈를 맞추기 위해
     cv2 resize 방법은 알아냈지만, 이미지 한장당 resize 방법만 알아냈고,
     60000만장 전체를 resize하는 방법을 찾느라 오래걸림
     -> for문으로 new array 에 resize 할당으로 해결
     -> but 메모리 초과
     -> conv_layer 수를 줄이고 input_size = (28,28)
-    
+
     정확도 약 0.92
    
    
@@ -91,5 +90,6 @@ return값으로 받아올 수 있다
 
 
 <<<<<<오류>>>>>>>>
+    
 Creating variables on a non-first call to a function decorated with tf.function.
 해결 : jupyter 재시작
